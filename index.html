@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Main Navbar -->
+    <nav id="Main-navbar" style="z-index: 2;">
+        <header>
+            <!-- toggle start -->
+            <div id="cover" class="cover">
+                <div id="custom-cursor-1">
+                    <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                        class="icon icon-close" viewBox="0 0 24 24">
+                        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="small-cover" class="small-cover"></div>
+            <div id="mini-cover" class="mini-cover"></div>
+            <div id="search-cover" class="search-cover">
+                <div id="custom-cursor-4">
+                    <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                        class="icon icon-close" viewBox="0 0 24 24">
+                        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="cart-cover" class="cart-cover">
+                <div id="custom-cursor-3">
+                    <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                        class="icon icon-close" viewBox="0 0 24 24">
+                        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="content-cover" class="content-cover">
+                <div id="custom-cursor-2">
+                    <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                        class="icon icon-close" viewBox="0 0 24 24">
+                        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="second-sidebar-cover" class="second-sidebar-cover"></div>
+            <nav class="navbar-container">
+                <!-- Three Lines Navabar Symbol -->
+                <button type="button" class="nav-btn" aria-controls="header-sidebar-menu" aria-expanded="false"
+                    onclick="openSidebar('sidebar','cover')">
+                    <svg role="presentation" stroke-width="1.2" focusable="false" width="22" height="22"
+                        class="icon icon-hamburger" viewBox="0 0 22 22">
+                        <path d="M1 5h20M1 11h20M1 17h20" stroke="currentColor" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+                <!-- search icon -->
+                <button aria-expanded="false" class="icon-btn resp-icons" id="search-icon"
+                    onclick="openSidebar('search','search-cover')">
+                    <svg role="presentation" stroke-width="1.2" focusable="false" width="22" height="22"
+                        class="icon icon-search" viewBox="0 0 22 22">
+                        <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
+                        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </button>
+                <!-- Decode Age Image -->
+                <img src="https://decodeage.com/cdn/shop/files/Decode_Age_LogoXWebsite_1960X760_a698c3d3-862e-4ec3-b217-2fc0a061ec9d.webp?v=1720682358&width=300"
+                    alt="Decode Age Logo" width="150px" height="55px" class="decode-age-image">
+                <!-- Nav contents -->
+                <section id="nav-contents-container">
+                    <div id="nav-contents">
+                        <span> Gut Microbiome Test </span>
+                        <span onclick="bothOpenClose()">
+                            Shop<svg role="presentation" focusable="false" width="10" height="7"
+                                class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+                                <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                        </span>
+                        <div id="sidebar-1" class="sidebar">
+                            <ul class="sidebar-links second-sidebar-links">
+                                <button class="closebtn" onclick="closeSidebar('sidebar-1', 'content-cover')">
+                                    <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                        class="icon icon-close" viewBox="0 0 24 24">
+                                        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                            stroke="currentColor">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <li class="hover-links">
+                                    <a href="#"
+                                        onclick="openSecondBar('mini-sidebar-1','mini-sidebar-2','mini-sidebar-3','mini-sidebar-4')">
+                                        Longevity Essentials
+                                        <button class="btn_1">
+                                            <svg role="presentation" focusable="false" width="5" height="8"
+                                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="hover-links">
+                                    <a href="#"
+                                        onclick="openSecondBar('mini-sidebar-2','mini-sidebar-1','mini-sidebar-3','mini-sidebar-4')">
+                                        Single Ingredients
+                                        <button class="btn_1">
+                                            <svg role="presentation" focusable="false" width="5" height="8"
+                                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="hover-links">
+                                    <a href="#"
+                                        onclick="openSecondBar('mini-sidebar-3','mini-sidebar-1','mini-sidebar-2','mini-sidebar-4')">
+                                        Daily Essentials
+                                        <button class="btn_1"><svg role="presentation" focusable="false" width="5"
+                                                height="8" class="icon icon-chevron-right-small reverse-icon"
+                                                viewBox="0 0 5 8">
+                                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="hover-links">
+                                    <a href="#"
+                                        onclick="openSecondBar('mini-sidebar-4','mini-sidebar-1','mini-sidebar-2','mini-sidebar-3')">
+                                        Bundles
+                                        <button class="btn_1"><svg role="presentation" focusable="false" width="5"
+                                                height="8" class="icon icon-chevron-right-small reverse-icon"
+                                                viewBox="0 0 5 8">
+                                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                    stroke-width="1.5">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <p class="hover-line">
+                                            Decode Biome Test
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Nav content Shop sidebar for Longevity Essentials -->
+                            <div id="mini-sidebar-1" class="second-sidebar second-sidebar-container-list">
+                                <ul class="mini-sidebar-links">
+                                    <li class="list-hover-line">
+                                        <a
+                                            href="/products/longevit-nmn-supplement-blend-slow-down-ageing-process-30-tablets"><img
+                                                src="//decodeage.com/cdn/shop/files/LongeVit_Breakthrough_Longevity_Formulation_30_Tablets_-_Decode_Age-1150168.jpg?v=1719987478&amp;width=104"
+                                                alt="LongeVit | Breakthrough Longevity Formulation | 30 Tablets - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/LongeVit_Breakthrough_Longevity_Formulation_30_Tablets_-_Decode_Age-1150168.jpg?v=1719987478&amp;width=52 52w, //decodeage.com/cdn/shop/files/LongeVit_Breakthrough_Longevity_Formulation_30_Tablets_-_Decode_Age-1150168.jpg?v=1719987478&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">LongeVit</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/resvit"><img
+                                                src="//decodeage.com/cdn/shop/files/ResVit_-_Powerful_Antioxidant_Blend_Protects_Cardiovascular_Eye_Health_30_Tablets_-_Decode_Age-1150223.jpg?v=1719987631&amp;width=104"
+                                                alt="ResVit - Powerful Antioxidant Blend | Protects Cardiovascular &amp; Eye Health | 30 Tablets - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/ResVit_-_Powerful_Antioxidant_Blend_Protects_Cardiovascular_Eye_Health_30_Tablets_-_Decode_Age-1150223.jpg?v=1719987631&amp;width=52 52w, //decodeage.com/cdn/shop/files/ResVit_-_Powerful_Antioxidant_Blend_Protects_Cardiovascular_Eye_Health_30_Tablets_-_Decode_Age-1150223.jpg?v=1719987631&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">ResVit</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/senevit"><img
+                                                src="//decodeage.com/cdn/shop/files/SeneVit_Senolytic_Activator_Clear_Damaged_and_Protect_Health_Cells_30_capsules_-_Decode_Age-1150233.jpg?v=1719987655&amp;width=104"
+                                                alt="SeneVit | Senolytic Activator | Clear Damaged and Protect Health Cells | 30 capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/SeneVit_Senolytic_Activator_Clear_Damaged_and_Protect_Health_Cells_30_capsules_-_Decode_Age-1150233.jpg?v=1719987655&amp;width=52 52w, //decodeage.com/cdn/shop/files/SeneVit_Senolytic_Activator_Clear_Damaged_and_Protect_Health_Cells_30_capsules_-_Decode_Age-1150233.jpg?v=1719987655&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">SeneVit</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/sportvit"><img
+                                                src="//decodeage.com/cdn/shop/files/SportVit_Caffeine-Free_Pre_Workout_30_Capsules_-_Decode_Age-1150260.jpg?v=1719987744&amp;width=104"
+                                                alt="SportVit | Caffeine-Free Pre Workout | 30 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/SportVit_Caffeine-Free_Pre_Workout_30_Capsules_-_Decode_Age-1150260.jpg?v=1719987744&amp;width=52 52w, //decodeage.com/cdn/shop/files/SportVit_Caffeine-Free_Pre_Workout_30_Capsules_-_Decode_Age-1150260.jpg?v=1719987744&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">SportVit</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav content Shop sidebar for Single Ingredients-->
+                            <div id="mini-sidebar-2" class="second-sidebar second-sidebar-container-list">
+                                <ul class="mini-sidebar-links">
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/collections/nmn-supplements"><img
+                                                src="//decodeage.com/cdn/shop/files/NMN_Uthever_250mg_Clinically_Proven_to_Boost_NAD_30_Capsules_-_Decode_Age-1150187.jpg?v=1719987529&amp;width=104"
+                                                alt="NMN Uthever 250mg | Clinically Proven to Boost NAD+ | 30 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/NMN_Uthever_250mg_Clinically_Proven_to_Boost_NAD_30_Capsules_-_Decode_Age-1150187.jpg?v=1719987529&amp;width=52 52w, //decodeage.com/cdn/shop/files/NMN_Uthever_250mg_Clinically_Proven_to_Boost_NAD_30_Capsules_-_Decode_Age-1150187.jpg?v=1719987529&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">NMN</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4"
+                                            href="/collections/trans-resveratrol-supplement"><img
+                                                src="//decodeage.com/cdn/shop/files/Trans_Resveratrol_500mg_99_Pure_Japanese_Knotweed_Extract_60_Capsule_-_Decode_Age-1150291.jpg?v=1719987831&amp;width=104"
+                                                alt="Trans Resveratrol 500mg | 99% Pure Japanese Knotweed Extract | 60 Capsule - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Trans_Resveratrol_500mg_99_Pure_Japanese_Knotweed_Extract_60_Capsule_-_Decode_Age-1150291.jpg?v=1719987831&amp;width=52 52w, //decodeage.com/cdn/shop/files/Trans_Resveratrol_500mg_99_Pure_Japanese_Knotweed_Extract_60_Capsule_-_Decode_Age-1150291.jpg?v=1719987831&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span class="hover-line">Trans
+                                                    Resveratrol</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/spermidine"><img
+                                                src="//decodeage.com/cdn/shop/files/Spermidine_10mg_99_Ultra_High_Concentrated_60_Capsules_-_Decode_Age-1150247.jpg?v=1719992271&amp;width=104"
+                                                alt="Spermidine 10mg | 99% Ultra High Concentrated | 60 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Spermidine_10mg_99_Ultra_High_Concentrated_60_Capsules_-_Decode_Age-1150247.jpg?v=1719992271&amp;width=52 52w, //decodeage.com/cdn/shop/files/Spermidine_10mg_99_Ultra_High_Concentrated_60_Capsules_-_Decode_Age-1150247.jpg?v=1719992271&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">Spermidine</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/fisetin"><img
+                                                src="//decodeage.com/cdn/shop/files/Fisetin_Supplement_100_mg_Rejuvenate_Cells_and_Reduce_Inflammation_30_capsules_-_Decode_Age-1150145.jpg?v=1719987413&amp;width=104"
+                                                alt="Fisetin Supplement 100 mg | Rejuvenate Cells and Reduce Inflammation | 30 capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Fisetin_Supplement_100_mg_Rejuvenate_Cells_and_Reduce_Inflammation_30_capsules_-_Decode_Age-1150145.jpg?v=1719987413&amp;width=52 52w, //decodeage.com/cdn/shop/files/Fisetin_Supplement_100_mg_Rejuvenate_Cells_and_Reduce_Inflammation_30_capsules_-_Decode_Age-1150145.jpg?v=1719987413&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">Fisetin</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/quercetin"><img
+                                                src="//decodeage.com/cdn/shop/files/Quercetin_Dihydrate_100mg_Relieve_Allergies_Inflammation_30_Capsules_-_Decode_Age-1150218.jpg?v=1719987618&amp;width=104"
+                                                alt="Quercetin Dihydrate 100mg | Relieve Allergies &amp; Inflammation | 30 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Quercetin_Dihydrate_100mg_Relieve_Allergies_Inflammation_30_Capsules_-_Decode_Age-1150218.jpg?v=1719987618&amp;width=52 52w, //decodeage.com/cdn/shop/files/Quercetin_Dihydrate_100mg_Relieve_Allergies_Inflammation_30_Capsules_-_Decode_Age-1150218.jpg?v=1719987618&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">Quercetin</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/akg"><img
+                                                src="//decodeage.com/cdn/shop/files/Calcium_AKG_Energy_Bone_Metabolic_Support_30_Capsules_-_Decode_Age-1150117.jpg?v=1719987328&amp;width=104"
+                                                alt="Calcium AKG | Energy, Bone, &amp; Metabolic Support | 30 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Calcium_AKG_Energy_Bone_Metabolic_Support_30_Capsules_-_Decode_Age-1150117.jpg?v=1719987328&amp;width=52 52w, //decodeage.com/cdn/shop/files/Calcium_AKG_Energy_Bone_Metabolic_Support_30_Capsules_-_Decode_Age-1150117.jpg?v=1719987328&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">Ca-AKG</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4"
+                                            href="/products/decode-age-tmg-98-puremax-leading-betaine-anhydrous-trimethylglycine-supplements"><img
+                                                src="//decodeage.com/cdn/shop/files/TMG_Trimethylglycine_500mg_Healthy_Homocysteine_30_Capsules_-_Decode_Age-1150270.jpg?v=1719987771&amp;width=104"
+                                                alt="TMG (Trimethylglycine) 500mg | Healthy Homocysteine | 30 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/TMG_Trimethylglycine_500mg_Healthy_Homocysteine_30_Capsules_-_Decode_Age-1150270.jpg?v=1719987771&amp;width=52 52w, //decodeage.com/cdn/shop/files/TMG_Trimethylglycine_500mg_Healthy_Homocysteine_30_Capsules_-_Decode_Age-1150270.jpg?v=1719987771&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">TMG</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/pterostilbene"><img
+                                                src="//decodeage.com/cdn/shop/files/Trans-Pterostilbene_100mg_Potent_Antioxidant_60_Capsules_-_Decode_Age-1150300.jpg?v=1719992309&amp;width=104"
+                                                alt="Trans-Pterostilbene 100mg | Potent Antioxidant | 60 Capsules - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Trans-Pterostilbene_100mg_Potent_Antioxidant_60_Capsules_-_Decode_Age-1150300.jpg?v=1719992309&amp;width=52 52w, //decodeage.com/cdn/shop/files/Trans-Pterostilbene_100mg_Potent_Antioxidant_60_Capsules_-_Decode_Age-1150300.jpg?v=1719992309&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span class="hover-line">
+                                                    Trans Pterostilbene</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/pterostilbene">
+                                            <img src="//decodeage.com/cdn/shop/files/Improve_energy_mitochondrial_and_heart_health_support_Healthy_ageing_with_CoQ10.webp?v=1724755354&amp;width=104"
+                                                alt="Improve energy, mitochondrial and heart health, support Healthy ageing with CoQ10"
+                                                srcset="//decodeage.com/cdn/shop/files/Improve_energy_mitochondrial_and_heart_health_support_Healthy_ageing_with_CoQ10.webp?v=1724755354&amp;width=52 52w, //decodeage.com/cdn/shop/files/Improve_energy_mitochondrial_and_heart_health_support_Healthy_ageing_with_CoQ10.webp?v=1724755354&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded">
+                                            <span><span class="hover-line"> CoQ10</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/pterostilbene">
+                                            <img src="//decodeage.com/cdn/shop/files/nr-30.webp?v=1724751282&amp;width=104"
+                                                alt="30 Capsules"
+                                                srcset="//decodeage.com/cdn/shop/files/nr-30.webp?v=1724751282&amp;width=52 52w, //decodeage.com/cdn/shop/files/nr-30.webp?v=1724751282&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded">
+                                            <span><span class="hover-line"> NR</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav content Shop sidebar for Daily Essentails-->
+                            <div id="mini-sidebar-3" class="second-sidebar second-sidebar-container-list">
+                                <ul class="mini-sidebar-links">
+                                    <li class="list-hover-line">
+                                        <a class="group h-stack gap-4" href="/products/mag-7"><img
+                                                src="//decodeage.com/cdn/shop/files/Support_mood_sleep_recovery_muscle_health_metabolism_and_relaxation_support_healthy_ageing_with_decode_age_mag7.webp?v=1724755137&amp;width=104"
+                                                alt="Support mood, sleep, recovery, muscle health, metabolism and  relaxation, support healthy ageing with decode age mag7"
+                                                srcset="//decodeage.com/cdn/shop/files/Support_mood_sleep_recovery_muscle_health_metabolism_and_relaxation_support_healthy_ageing_with_decode_age_mag7.webp?v=1724755137&amp;width=52 52w, //decodeage.com/cdn/shop/files/Support_mood_sleep_recovery_muscle_health_metabolism_and_relaxation_support_healthy_ageing_with_decode_age_mag7.webp?v=1724755137&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px"
+                                                class="panel-link__image rounded"><span><span
+                                                    class="hover-line">MAG7</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav content Shop sidebar for Bundles-->
+                            <div id="mini-sidebar-4" class="second-sidebar second-sidebar-container-list">
+                                <ul class="mini-sidebar-links">
+                                    <li>
+                                        <a href="https://decodeage.com/collections/bundles"><span class="hover-line">All
+                                                Bundles</span> </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/sirtuin-activator-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Sirtuin_Activator_Bundle_-_Decode_Age-1150244.jpg?v=1719987692&amp;width=104"
+                                                alt="Sirtuin Activator Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Sirtuin_Activator_Bundle_-_Decode_Age-1150244.jpg?v=1719987692&amp;width=52 52w, //decodeage.com/cdn/shop/files/Sirtuin_Activator_Bundle_-_Decode_Age-1150244.jpg?v=1719987692&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Sirtuin Activator Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/mitochondrial-health-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Mitochondrial_Health_Bundle_-_Decode_Age-1150178.jpg?v=1719987504&amp;width=104"
+                                                alt="Mitochondrial Health Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Mitochondrial_Health_Bundle_-_Decode_Age-1150178.jpg?v=1719987504&amp;width=52 52w, //decodeage.com/cdn/shop/files/Mitochondrial_Health_Bundle_-_Decode_Age-1150178.jpg?v=1719987504&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Mitochondrial Health Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/immunity-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Immunity_Bundle_-_Decode_Age-1150156.jpg?v=1719987443&amp;width=104"
+                                                alt="Immunity Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Immunity_Bundle_-_Decode_Age-1150156.jpg?v=1719987443&amp;width=52 52w, //decodeage.com/cdn/shop/files/Immunity_Bundle_-_Decode_Age-1150156.jpg?v=1719987443&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Immunity Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/cognitive-wellness-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Brain_Health_Bundle_-_Decode_Age-1150115.jpg?v=1719987318&amp;width=104"
+                                                alt="Brain Health Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Brain_Health_Bundle_-_Decode_Age-1150115.jpg?v=1719987318&amp;width=52 52w, //decodeage.com/cdn/shop/files/Brain_Health_Bundle_-_Decode_Age-1150115.jpg?v=1719987318&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Cognitive Wellness Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/heart-health-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Heart_Health_Bundle_-_Decode_Age-1150154.jpg?v=1719987441&amp;width=104"
+                                                alt="Heart Health Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Heart_Health_Bundle_-_Decode_Age-1150154.jpg?v=1719987441&amp;width=52 52w, //decodeage.com/cdn/shop/files/Heart_Health_Bundle_-_Decode_Age-1150154.jpg?v=1719987441&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Heart Health Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/bone-and-muscle-health-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Bone_and_Muscle_Health_Bundle_-_Decode_Age-1150113.jpg?v=1719987311&amp;width=104"
+                                                alt="Bone and Muscle Health Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Bone_and_Muscle_Health_Bundle_-_Decode_Age-1150113.jpg?v=1719987311&amp;width=52 52w, //decodeage.com/cdn/shop/files/Bone_and_Muscle_Health_Bundle_-_Decode_Age-1150113.jpg?v=1719987311&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Bone and Muscle Health Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/longevit-resvit-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/LongeVit_ResVit_Bundle_-_Decode_Age-1150162.jpg?v=1719987459&amp;width=104"
+                                                alt="LongeVit &amp; ResVit Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/LongeVit_ResVit_Bundle_-_Decode_Age-1150162.jpg?v=1719987459&amp;width=52 52w, //decodeage.com/cdn/shop/files/LongeVit_ResVit_Bundle_-_Decode_Age-1150162.jpg?v=1719987459&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">LongeVit &amp; ResVit Combo Slow Down Ageing</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/autophagy-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Autophagy_Bundle_-_Decode_Age-1150109.jpg?v=1719987305&amp;width=104"
+                                                alt="Autophagy Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Autophagy_Bundle_-_Decode_Age-1150109.jpg?v=1719987305&amp;width=52 52w, //decodeage.com/cdn/shop/files/Autophagy_Bundle_-_Decode_Age-1150109.jpg?v=1719987305&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Autophagy Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/inflammation-management-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Inflammation_Management_Bundle_-_Decode_Age-1150159.jpg?v=1719987450&amp;width=104"
+                                                alt="Inflammation Management Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Inflammation_Management_Bundle_-_Decode_Age-1150159.jpg?v=1719987450&amp;width=52 52w, //decodeage.com/cdn/shop/files/Inflammation_Management_Bundle_-_Decode_Age-1150159.jpg?v=1719987450&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Inflammation Management Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/weight-management-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Weight_Management_Bundle_2_Months_Dosage_-_Decode_Age-1150310.jpg?v=1719987900&amp;width=104"
+                                                alt="Weight Management Bundle (2 Months Dosage) - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Weight_Management_Bundle_2_Months_Dosage_-_Decode_Age-1150310.jpg?v=1719987900&amp;width=52 52w, //decodeage.com/cdn/shop/files/Weight_Management_Bundle_2_Months_Dosage_-_Decode_Age-1150310.jpg?v=1719987900&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Weight Management Bundle (2 Month Dosage)</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/sports-performance-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Sports_Performance_Bundle_-_Decode_Age-1150258.jpg?v=1719987738&amp;width=104"
+                                                alt="Sports Performance Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Sports_Performance_Bundle_-_Decode_Age-1150258.jpg?v=1719987738&amp;width=52 52w, //decodeage.com/cdn/shop/files/Sports_Performance_Bundle_-_Decode_Age-1150258.jpg?v=1719987738&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Sports Performance Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/stamina-booster-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Stamina_Booster_Bundle_-_Decode_Age-1150268.jpg?v=1719987765&amp;width=104"
+                                                alt="Stamina Booster Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Stamina_Booster_Bundle_-_Decode_Age-1150268.jpg?v=1719987765&amp;width=52 52w, //decodeage.com/cdn/shop/files/Stamina_Booster_Bundle_-_Decode_Age-1150268.jpg?v=1719987765&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Stamina Booster Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/skin-health-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Skin_Health_Bundle_-_Decode_Age-1150245.jpg?v=1719987695&amp;width=104"
+                                                alt="Skin Health Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Skin_Health_Bundle_-_Decode_Age-1150245.jpg?v=1719987695&amp;width=52 52w, //decodeage.com/cdn/shop/files/Skin_Health_Bundle_-_Decode_Age-1150245.jpg?v=1719987695&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Skin Health Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/senolytic-activator-bundle">
+                                            <img src="//decodeage.com/cdn/shop/files/Senolytic_Activator_Bundle_-_Decode_Age-1150243.jpg?v=1719987690&amp;width=104"
+                                                alt="Senolytic Activator Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Senolytic_Activator_Bundle_-_Decode_Age-1150243.jpg?v=1719987690&amp;width=52 52w, //decodeage.com/cdn/shop/files/Senolytic_Activator_Bundle_-_Decode_Age-1150243.jpg?v=1719987690&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Senolytic Activator Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/nad-booster-bundle"><img
+                                                src="//decodeage.com/cdn/shop/files/NAD_Booster_Bundle_-_Decode_Age-1150182.jpg?v=1719987517&amp;width=104"
+                                                alt="NAD+ Booster Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/NAD_Booster_Bundle_-_Decode_Age-1150182.jpg?v=1719987517&amp;width=52 52w, //decodeage.com/cdn/shop/files/NAD_Booster_Bundle_-_Decode_Age-1150182.jpg?v=1719987517&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">NAD+ Booster Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/menopause-wellness-bundle"><img
+                                                src="//decodeage.com/cdn/shop/files/Menopause_Wellness_Bundle_-_Decode_Age-1150177.jpg?v=1719987510&amp;width=104"
+                                                alt="Menopause Wellness Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Menopause_Wellness_Bundle_-_Decode_Age-1150177.jpg?v=1719987510&amp;width=52 52w, //decodeage.com/cdn/shop/files/Menopause_Wellness_Bundle_-_Decode_Age-1150177.jpg?v=1719987510&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Menopause Wellness Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/healthy-ageing-bundle"><img
+                                                src="//decodeage.com/cdn/shop/files/Healthy_Ageing_Bundle_-_Decode_Age-1150153.jpg?v=1719987437&amp;width=104"
+                                                alt="Healthy Ageing Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Healthy_Ageing_Bundle_-_Decode_Age-1150153.jpg?v=1719987437&amp;width=52 52w, //decodeage.com/cdn/shop/files/Healthy_Ageing_Bundle_-_Decode_Age-1150153.jpg?v=1719987437&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Healthy Ageing Bundle</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-hover-line">
+                                        <a href="/products/boost-metabolism-bundle"><img
+                                                src="//decodeage.com/cdn/shop/files/Boost_Metabolism_Bundle_-_Decode_Age-1150114.jpg?v=1719987314&amp;width=104"
+                                                alt="Boost Metabolism Bundle - Decode Age"
+                                                srcset="//decodeage.com/cdn/shop/files/Boost_Metabolism_Bundle_-_Decode_Age-1150114.jpg?v=1719987314&amp;width=52 52w, //decodeage.com/cdn/shop/files/Boost_Metabolism_Bundle_-_Decode_Age-1150114.jpg?v=1719987314&amp;width=104 104w"
+                                                width="104" height="104" loading="lazy" sizes="52px">
+                                            <span class="hover-line">Boost Metabolism Bundle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span onclick="openSidebar('sidebar-2','content-cover')">
+                            Category<svg role="presentation" focusable="false" width="10" height="7"
+                                class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+                                <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                        </span>
+                        <div id="sidebar-2" class="sidebar">
+                            <button class="closebtn" onclick="closeSidebar('sidebar-2','content-cover')">
+                                <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                    class="icon icon-close" viewBox="0 0 24 24">
+                                    <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                        stroke="currentColor">
+                                    </path>
+                                </svg>
+                            </button>
+                            <ul class="sidebar-links">
+                                <li> <a href="#">
+                                        <p class="hover-line">Sports Performance</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">NAD+</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Senolytic Activator</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Healthy Ageing</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Autophagy</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Sirtuin Activator</p>
+                                    </a> </li>
+                            </ul>
+                        </div>
+                        <span onclick="openSidebar('sidebar-3','content-cover')">
+                            Health Concerns<svg role="presentation" focusable="false" width="10" height="7"
+                                class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+                                <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                        </span>
+                        <div id="sidebar-3" class="sidebar">
+                            <button class="closebtn" onclick="closeSidebar('sidebar-3','content-cover')"><svg
+                                    role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                    class="icon icon-close" viewBox="0 0 24 24">
+                                    <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                        stroke="currentColor">
+                                    </path>
+                                </svg></button>
+                            <ul class="sidebar-links">
+                                <li> <a href="#">
+                                        <p class="hover-line">Menopause</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Boost Metabolism</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Skin Health</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Stamina Booster</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">NAD+</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Bone and Muscle Health</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Weight Management</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Heart Health</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Inflammation</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Immunity</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Mitochondrial</p>
+                                    </a> </li>
+                            </ul>
+                        </div>
+                        <span onclick="openSidebar('sidebar-4','content-cover')">
+                            Articles<svg role="presentation" focusable="false" width="10" height="7"
+                                class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+                                <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                        </span>
+                        <div id="sidebar-4" class="sidebar">
+                            <button class="closebtn" onclick="closeSidebar('sidebar-4','content-cover')">
+                                <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                    class="icon icon-close" viewBox="0 0 24 24">
+                                    <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                        stroke="currentColor">
+                                    </path>
+                                </svg>
+                            </button>
+                            <ul class="sidebar-links">
+                                <li> <a href="#">
+                                        <p class="hover-line">Gut Microbiome</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Health and Disease</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Biohacking</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Clinical Trials</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Ageing</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Supplements</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">News</p>
+                                    </a> </li>
+                                <li> <a href="/blogs/pr">
+                                        <p class="hover-line">PR</p>
+                                    </a> </li>
+                            </ul>
+                        </div>
+                        <span onclick="openSidebar('sidebar-5','content-cover')">
+                            About Us<svg role="presentation" focusable="false" width="10" height="7"
+                                class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+                                <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                        </span>
+                        <div id="sidebar-5" class="sidebar">
+                            <button class="closebtn" onclick="closeSidebar('sidebar-5','content-cover')">
+                                <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                    class="icon icon-close" viewBox="0 0 24 24">
+                                    <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                        stroke="currentColor">
+                                    </path>
+                                </svg>
+                            </button>
+                            <ul class="sidebar-links">
+                                <li> <a href="#">
+                                        <p class="hover-line">Who We Are</p>
+                                    </a> </li>
+                                <li> <a href="#">
+                                        <p class="hover-line">Science</p>
+                                    </a> </li>
+                                <li> <a href="/pages/careers">
+                                        <p class="hover-line"> Work With Us</p>
+                                    </a> </li>
+                            </ul>
+                        </div>
+                        <span> Help </span>
+                        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                    </div>
+                </section>
+                <div id="navbar-icons-container">
+                    <!-- search icon -->
+                    <button aria-expanded="false" class="icon-btn resp-icons"
+                        onclick="openSidebar('search','search-cover')">
+                        <svg role="presentation" stroke-width="1.2" focusable="false" width="22" height="22"
+                            class="icon icon-search" viewBox="0 0 22 22">
+                            <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
+                            <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </button>
+                    <!-- person -->
+                    <button aria-expanded="false" class="icon-btn resp-icons">
+                        <svg role="presentation" stroke-width="1.2" focusable="false" width="22" height="22"
+                            class="icon icon-account" viewBox="0 0 22 22">
+                            <circle cx="11" cy="7" r="4" fill="none" stroke="currentColor"></circle>
+                            <path d="M3.5 19c1.421-2.974 4.247-5 7.5-5s6.079 2.026 7.5 5" fill="none"
+                                stroke="currentColor" stroke-linecap="round"></path>
+                        </svg>
+                    </button>
+                    <!-- cart -->
+                    <button aria-expanded="false" class="icon-btn" onclick="openSidebar('cart','cart-cover')">
+                        <svg role="presentation" stroke-width="1.2" focusable="false" width="22" height="22"
+                            class="icon icon-cart" viewBox="0 0 22 22">
+                            <path
+                                d="M11 7H3.577A2 2 0 0 0 1.64 9.497l2.051 8A2 2 0 0 0 5.63 19H16.37a2 2 0 0 0 1.937-1.503l2.052-8A2 2 0 0 0 18.422 7H11Zm0 0V1"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- Sidebar for search -->
+        <div id="search" class="search">
+            <div id="search-container">
+                <input type="text" placeholder="Search for..." id="search-input">
+                <button type="reset" id="text-clear">Clear</button>
+                <button type="button" class="close-button" onclick="closeSidebar('search','search-cover')">
+                    <svg role="presentation" stroke-width="2" focusable="false" width="24" height="24"
+                        class="icon icon-close" viewBox="0 0 24 24">
+                        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Sidebar for cart -->
+        <div id="cart" class="cart">
+            <button is="close-button" aria-label="Close" class="cart-close" onclick="closeSidebar('cart','cart-cover')">
+                <svg role="presentation" stroke-width="2" focusable="false" width="24" height="24"
+                    class="icon icon-close" viewBox="0 0 24 24">
+                    <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                </svg>
+            </button>
+            <div class="cart-container">
+                <div class="">
+                    <svg role="presentation" stroke-width="1" focusable="false" width="32" height="32"
+                        class="icon icon-cart" viewBox="0 0 22 22">
+                        <path
+                            d="M11 7H3.577A2 2 0 0 0 1.64 9.497l2.051 8A2 2 0 0 0 5.63 19H16.37a2 2 0 0 0 1.937-1.503l2.052-8A2 2 0 0 0 18.422 7H11Zm0 0V1"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="count-bubble">0</span>
+                </div>
+                <div class="prose">
+                    <p>Your cart is empty</p>
+                    <a href="/collections/all">Continue shopping</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar for Three Lines Navbar -->
+        <div id="sidebar" class="sidebar">
+            <button class="closebtn" onclick="closeSidebar('sidebar','cover')">
+                <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                    class="icon icon-close" viewBox="0 0 24 24">
+                    <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                </svg>
+            </button>
+            <ul class="sidebar-links" id="sidebar-container">
+                <li>
+                    <a href="/products/decode-biome-the-most-advanced-gut-microbiome-test-for-gut-health">
+                        <span class="hover-line">Gut Microbiome Test</span>
+                    </a>
+                </li>
+                <li class="hover-links">
+                    <a href="#" onclick="openSidebar('small-sidebar0','small-cover')">
+                        Shop
+                        <button class="btn_1">
+                            <svg role="presentation" focusable="false" width="5" height="8"
+                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <!-- shop sub-sidebar -->
+                    <div id="small-sidebar0" class="sidebar">
+                        <button class="closebtn" onclick="closeBothSidebar('sidebar','small-sidebar0')">
+                            <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                class="icon icon-close" viewBox="0 0 24 24">
+                                <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="sidebar-links">
+                            <li>
+                                <button class="text-with-icon h6 text-subdued" data-panel="0"
+                                    onclick="closeSidebar('small-sidebar0','small-cover')">
+                                    <svg role="presentation" focusable="false" width="7" height="10"
+                                        class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                        <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor" stroke-width="2">
+                                        </path>
+                                    </svg>Shop
+                                </button>
+                            </li>
+                            <li class="hover-links">
+                                <a href="#" onclick="openSidebar('mini-sidebar0','mini-cover')">
+                                    Longevity Essentials
+                                    <button class="btn_1"><svg role="presentation" focusable="false" width="5"
+                                            height="8" class="icon icon-chevron-right-small reverse-icon"
+                                            viewBox="0 0 5 8">
+                                            <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                stroke-width="1.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <!-- shop mini-sub-sidebar-1 -->
+                                <div id="mini-sidebar0" class="sidebar">
+                                    <button class="closebtn"
+                                        onclick="closeThreeSidebar('sidebar','small-sidebar0','mini-sidebar0')">
+                                        <svg role="presentation" stroke-width="2" focusable="false" width="19"
+                                            height="19" class="icon icon-close" viewBox="0 0 24 24">
+                                            <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                                stroke="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <ul class="mini-sidebar-links">
+                                        <li>
+                                            <button class="text-with-icon h6 text-subdued" data-panel="1"
+                                                onclick="closeSidebar('mini-sidebar0','mini-cover')">
+                                                <svg role="presentation" focusable="false" width="7" height="10"
+                                                    class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                                    <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor"
+                                                        stroke-width="2">
+                                                    </path>
+                                                </svg>
+                                                Longevity Essentials
+                                            </button>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a
+                                                href="/products/longevit-nmn-supplement-blend-slow-down-ageing-process-30-tablets"><img
+                                                    src="//decodeage.com/cdn/shop/files/LongeVit_Breakthrough_Longevity_Formulation_30_Tablets_-_Decode_Age-1150168.jpg?v=1719987478&amp;width=104"
+                                                    alt="LongeVit | Breakthrough Longevity Formulation | 30 Tablets - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/LongeVit_Breakthrough_Longevity_Formulation_30_Tablets_-_Decode_Age-1150168.jpg?v=1719987478&amp;width=52 52w, //decodeage.com/cdn/shop/files/LongeVit_Breakthrough_Longevity_Formulation_30_Tablets_-_Decode_Age-1150168.jpg?v=1719987478&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">LongeVit</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/resvit"><img
+                                                    src="//decodeage.com/cdn/shop/files/ResVit_-_Powerful_Antioxidant_Blend_Protects_Cardiovascular_Eye_Health_30_Tablets_-_Decode_Age-1150223.jpg?v=1719987631&amp;width=104"
+                                                    alt="ResVit - Powerful Antioxidant Blend | Protects Cardiovascular &amp; Eye Health | 30 Tablets - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/ResVit_-_Powerful_Antioxidant_Blend_Protects_Cardiovascular_Eye_Health_30_Tablets_-_Decode_Age-1150223.jpg?v=1719987631&amp;width=52 52w, //decodeage.com/cdn/shop/files/ResVit_-_Powerful_Antioxidant_Blend_Protects_Cardiovascular_Eye_Health_30_Tablets_-_Decode_Age-1150223.jpg?v=1719987631&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">ResVit</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/senevit"><img
+                                                    src="//decodeage.com/cdn/shop/files/SeneVit_Senolytic_Activator_Clear_Damaged_and_Protect_Health_Cells_30_capsules_-_Decode_Age-1150233.jpg?v=1719987655&amp;width=104"
+                                                    alt="SeneVit | Senolytic Activator | Clear Damaged and Protect Health Cells | 30 capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/SeneVit_Senolytic_Activator_Clear_Damaged_and_Protect_Health_Cells_30_capsules_-_Decode_Age-1150233.jpg?v=1719987655&amp;width=52 52w, //decodeage.com/cdn/shop/files/SeneVit_Senolytic_Activator_Clear_Damaged_and_Protect_Health_Cells_30_capsules_-_Decode_Age-1150233.jpg?v=1719987655&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">SeneVit</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/sportvit"><img
+                                                    src="//decodeage.com/cdn/shop/files/SportVit_Caffeine-Free_Pre_Workout_30_Capsules_-_Decode_Age-1150260.jpg?v=1719987744&amp;width=104"
+                                                    alt="SportVit | Caffeine-Free Pre Workout | 30 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/SportVit_Caffeine-Free_Pre_Workout_30_Capsules_-_Decode_Age-1150260.jpg?v=1719987744&amp;width=52 52w, //decodeage.com/cdn/shop/files/SportVit_Caffeine-Free_Pre_Workout_30_Capsules_-_Decode_Age-1150260.jpg?v=1719987744&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">SportVit</span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hover-links">
+                                <a href="#" onclick="openSidebar('mini-sidebar1','mini-cover')">
+                                    Single Ingredients
+                                    <button class="btn_1">
+                                        <svg role="presentation" focusable="false" width="5" height="8"
+                                            class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                            <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                stroke-width="1.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <!-- shope mini-sub-sidebar-2 -->
+                                <div id="mini-sidebar1" class="sidebar">
+                                    <button class="closebtn"
+                                        onclick="closeThreeSidebar('sidebar','small-sidebar0','mini-sidebar1')">
+                                        <svg role="presentation" stroke-width="2" focusable="false" width="19"
+                                            height="19" class="icon icon-close" viewBox="0 0 24 24">
+                                            <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                                stroke="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <ul class="mini-sidebar-links">
+                                        <li class="list-hover-line">
+                                            <button class="text-with-icon h6 text-subdued" data-panel="1"
+                                                onclick="closeSidebar('mini-sidebar1','mini-cover')">
+                                                <svg role="presentation" focusable="false" width="7" height="10"
+                                                    class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                                    <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor"
+                                                        stroke-width="2"></path>
+                                                </svg>Single Ingredients
+                                            </button>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/collections/nmn-supplements"><img
+                                                    src="//decodeage.com/cdn/shop/files/NMN_Uthever_250mg_Clinically_Proven_to_Boost_NAD_30_Capsules_-_Decode_Age-1150187.jpg?v=1719987529&amp;width=104"
+                                                    alt="NMN Uthever 250mg | Clinically Proven to Boost NAD+ | 30 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/NMN_Uthever_250mg_Clinically_Proven_to_Boost_NAD_30_Capsules_-_Decode_Age-1150187.jpg?v=1719987529&amp;width=52 52w, //decodeage.com/cdn/shop/files/NMN_Uthever_250mg_Clinically_Proven_to_Boost_NAD_30_Capsules_-_Decode_Age-1150187.jpg?v=1719987529&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">NMN</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4"
+                                                href="/collections/trans-resveratrol-supplement"><img
+                                                    src="//decodeage.com/cdn/shop/files/Trans_Resveratrol_500mg_99_Pure_Japanese_Knotweed_Extract_60_Capsule_-_Decode_Age-1150291.jpg?v=1719987831&amp;width=104"
+                                                    alt="Trans Resveratrol 500mg | 99% Pure Japanese Knotweed Extract | 60 Capsule - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Trans_Resveratrol_500mg_99_Pure_Japanese_Knotweed_Extract_60_Capsule_-_Decode_Age-1150291.jpg?v=1719987831&amp;width=52 52w, //decodeage.com/cdn/shop/files/Trans_Resveratrol_500mg_99_Pure_Japanese_Knotweed_Extract_60_Capsule_-_Decode_Age-1150291.jpg?v=1719987831&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">Trans
+                                                        Resveratrol</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/spermidine"><img
+                                                    src="//decodeage.com/cdn/shop/files/Spermidine_10mg_99_Ultra_High_Concentrated_60_Capsules_-_Decode_Age-1150247.jpg?v=1719992271&amp;width=104"
+                                                    alt="Spermidine 10mg | 99% Ultra High Concentrated | 60 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Spermidine_10mg_99_Ultra_High_Concentrated_60_Capsules_-_Decode_Age-1150247.jpg?v=1719992271&amp;width=52 52w, //decodeage.com/cdn/shop/files/Spermidine_10mg_99_Ultra_High_Concentrated_60_Capsules_-_Decode_Age-1150247.jpg?v=1719992271&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">Spermidine</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/fisetin"><img
+                                                    src="//decodeage.com/cdn/shop/files/Fisetin_Supplement_100_mg_Rejuvenate_Cells_and_Reduce_Inflammation_30_capsules_-_Decode_Age-1150145.jpg?v=1719987413&amp;width=104"
+                                                    alt="Fisetin Supplement 100 mg | Rejuvenate Cells and Reduce Inflammation | 30 capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Fisetin_Supplement_100_mg_Rejuvenate_Cells_and_Reduce_Inflammation_30_capsules_-_Decode_Age-1150145.jpg?v=1719987413&amp;width=52 52w, //decodeage.com/cdn/shop/files/Fisetin_Supplement_100_mg_Rejuvenate_Cells_and_Reduce_Inflammation_30_capsules_-_Decode_Age-1150145.jpg?v=1719987413&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">Fisetin</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/quercetin"><img
+                                                    src="//decodeage.com/cdn/shop/files/Quercetin_Dihydrate_100mg_Relieve_Allergies_Inflammation_30_Capsules_-_Decode_Age-1150218.jpg?v=1719987618&amp;width=104"
+                                                    alt="Quercetin Dihydrate 100mg | Relieve Allergies &amp; Inflammation | 30 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Quercetin_Dihydrate_100mg_Relieve_Allergies_Inflammation_30_Capsules_-_Decode_Age-1150218.jpg?v=1719987618&amp;width=52 52w, //decodeage.com/cdn/shop/files/Quercetin_Dihydrate_100mg_Relieve_Allergies_Inflammation_30_Capsules_-_Decode_Age-1150218.jpg?v=1719987618&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">Quercetin</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/akg"><img
+                                                    src="//decodeage.com/cdn/shop/files/Calcium_AKG_Energy_Bone_Metabolic_Support_30_Capsules_-_Decode_Age-1150117.jpg?v=1719987328&amp;width=104"
+                                                    alt="Calcium AKG | Energy, Bone, &amp; Metabolic Support | 30 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Calcium_AKG_Energy_Bone_Metabolic_Support_30_Capsules_-_Decode_Age-1150117.jpg?v=1719987328&amp;width=52 52w, //decodeage.com/cdn/shop/files/Calcium_AKG_Energy_Bone_Metabolic_Support_30_Capsules_-_Decode_Age-1150117.jpg?v=1719987328&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">Ca-AKG</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4"
+                                                href="/products/decode-age-tmg-98-puremax-leading-betaine-anhydrous-trimethylglycine-supplements"><img
+                                                    src="//decodeage.com/cdn/shop/files/TMG_Trimethylglycine_500mg_Healthy_Homocysteine_30_Capsules_-_Decode_Age-1150270.jpg?v=1719987771&amp;width=104"
+                                                    alt="TMG (Trimethylglycine) 500mg | Healthy Homocysteine | 30 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/TMG_Trimethylglycine_500mg_Healthy_Homocysteine_30_Capsules_-_Decode_Age-1150270.jpg?v=1719987771&amp;width=52 52w, //decodeage.com/cdn/shop/files/TMG_Trimethylglycine_500mg_Healthy_Homocysteine_30_Capsules_-_Decode_Age-1150270.jpg?v=1719987771&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">TMG</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/pterostilbene"><img
+                                                    src="//decodeage.com/cdn/shop/files/Trans-Pterostilbene_100mg_Potent_Antioxidant_60_Capsules_-_Decode_Age-1150300.jpg?v=1719992309&amp;width=104"
+                                                    alt="Trans-Pterostilbene 100mg | Potent Antioxidant | 60 Capsules - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Trans-Pterostilbene_100mg_Potent_Antioxidant_60_Capsules_-_Decode_Age-1150300.jpg?v=1719992309&amp;width=52 52w, //decodeage.com/cdn/shop/files/Trans-Pterostilbene_100mg_Potent_Antioxidant_60_Capsules_-_Decode_Age-1150300.jpg?v=1719992309&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span class="hover-line">
+                                                        Trans Pterostilbene</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/pterostilbene">
+                                                <img src="//decodeage.com/cdn/shop/files/Improve_energy_mitochondrial_and_heart_health_support_Healthy_ageing_with_CoQ10.webp?v=1724755354&amp;width=104"
+                                                    alt="Improve energy, mitochondrial and heart health, support Healthy ageing with CoQ10"
+                                                    srcset="//decodeage.com/cdn/shop/files/Improve_energy_mitochondrial_and_heart_health_support_Healthy_ageing_with_CoQ10.webp?v=1724755354&amp;width=52 52w, //decodeage.com/cdn/shop/files/Improve_energy_mitochondrial_and_heart_health_support_Healthy_ageing_with_CoQ10.webp?v=1724755354&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded">
+                                                <span><span class="hover-line"> CoQ10</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/pterostilbene">
+                                                <img src="//decodeage.com/cdn/shop/files/nr-30.webp?v=1724751282&amp;width=104"
+                                                    alt="30 Capsules"
+                                                    srcset="//decodeage.com/cdn/shop/files/nr-30.webp?v=1724751282&amp;width=52 52w, //decodeage.com/cdn/shop/files/nr-30.webp?v=1724751282&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded">
+                                                <span><span class="hover-line"> NR</span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hover-links">
+                                <a href="#" onclick="openSidebar('mini-sidebar2','mini-cover')">
+                                    Daily Essentials
+                                    <button class="btn_1">
+                                        <svg role="presentation" focusable="false" width="5" height="8"
+                                            class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                            <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                stroke-width="1.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <!-- shope mini-sub-sidebar-3 -->
+                                <div id="mini-sidebar2" class="sidebar">
+                                    <button class="closebtn"
+                                        onclick="closeThreeSidebar('sidebar','small-sidebar0','mini-sidebar2')">
+                                        <svg role="presentation" stroke-width="2" focusable="false" width="19"
+                                            height="19" class="icon icon-close" viewBox="0 0 24 24">
+                                            <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                                stroke="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <ul class="mini-sidebar-links">
+                                        <li class="list-hover-line">
+                                            <button class="text-with-icon h6 text-subdued" data-panel="1"
+                                                onclick="closeSidebar('mini-sidebar2','mini-cover')">
+                                                <svg role="presentation" focusable="false" width="7" height="10"
+                                                    class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                                    <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor"
+                                                        stroke-width="2"></path>
+                                                </svg>Daily Essentials
+                                            </button>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a class="group h-stack gap-4" href="/products/mag-7"><img
+                                                    src="//decodeage.com/cdn/shop/files/Support_mood_sleep_recovery_muscle_health_metabolism_and_relaxation_support_healthy_ageing_with_decode_age_mag7.webp?v=1724755137&amp;width=104"
+                                                    alt="Support mood, sleep, recovery, muscle health, metabolism and  relaxation, support healthy ageing with decode age mag7"
+                                                    srcset="//decodeage.com/cdn/shop/files/Support_mood_sleep_recovery_muscle_health_metabolism_and_relaxation_support_healthy_ageing_with_decode_age_mag7.webp?v=1724755137&amp;width=52 52w, //decodeage.com/cdn/shop/files/Support_mood_sleep_recovery_muscle_health_metabolism_and_relaxation_support_healthy_ageing_with_decode_age_mag7.webp?v=1724755137&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px"
+                                                    class="panel-link__image rounded"><span><span
+                                                        class="hover-line">MAG7</span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hover-links">
+                                <a href="#" onclick="openSidebar('mini-sidebar3','mini-cover')">
+                                    Bundles
+                                    <button class="btn_1"><svg role="presentation" focusable="false" width="5"
+                                            height="8" class="icon icon-chevron-right-small reverse-icon"
+                                            viewBox="0 0 5 8">
+                                            <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor"
+                                                stroke-width="1.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <!-- Shop mini-sub-sidebar-4 -->
+                                <div id="mini-sidebar3" class="sidebar">
+                                    <button class="closebtn"
+                                        onclick="closeThreeSidebar('sidebar','small-sidebar0','mini-sidebar3')">
+                                        <svg role="presentation" stroke-width="2" focusable="false" width="19"
+                                            height="19" class="icon icon-close" viewBox="0 0 24 24">
+                                            <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343"
+                                                stroke="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <ul class="mini-sidebar-links">
+                                        <li>
+                                            <button data-panel="1" onclick="closeSidebar('mini-sidebar3','mini-cover')">
+                                                <svg role="presentation" focusable="false" width="7" height="10"
+                                                    class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                                    <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor"
+                                                        stroke-width="2"></path>
+                                                </svg>Bundles
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <a href="https://decodeage.com/collections/bundles"><span
+                                                    class="hover-line">All
+                                                    Bundles</span> </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/sirtuin-activator-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Sirtuin_Activator_Bundle_-_Decode_Age-1150244.jpg?v=1719987692&amp;width=104"
+                                                    alt="Sirtuin Activator Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Sirtuin_Activator_Bundle_-_Decode_Age-1150244.jpg?v=1719987692&amp;width=52 52w, //decodeage.com/cdn/shop/files/Sirtuin_Activator_Bundle_-_Decode_Age-1150244.jpg?v=1719987692&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Sirtuin Activator Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/mitochondrial-health-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Mitochondrial_Health_Bundle_-_Decode_Age-1150178.jpg?v=1719987504&amp;width=104"
+                                                    alt="Mitochondrial Health Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Mitochondrial_Health_Bundle_-_Decode_Age-1150178.jpg?v=1719987504&amp;width=52 52w, //decodeage.com/cdn/shop/files/Mitochondrial_Health_Bundle_-_Decode_Age-1150178.jpg?v=1719987504&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Mitochondrial Health Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/immunity-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Immunity_Bundle_-_Decode_Age-1150156.jpg?v=1719987443&amp;width=104"
+                                                    alt="Immunity Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Immunity_Bundle_-_Decode_Age-1150156.jpg?v=1719987443&amp;width=52 52w, //decodeage.com/cdn/shop/files/Immunity_Bundle_-_Decode_Age-1150156.jpg?v=1719987443&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Immunity Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/cognitive-wellness-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Brain_Health_Bundle_-_Decode_Age-1150115.jpg?v=1719987318&amp;width=104"
+                                                    alt="Brain Health Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Brain_Health_Bundle_-_Decode_Age-1150115.jpg?v=1719987318&amp;width=52 52w, //decodeage.com/cdn/shop/files/Brain_Health_Bundle_-_Decode_Age-1150115.jpg?v=1719987318&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Cognitive Wellness Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/heart-health-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Heart_Health_Bundle_-_Decode_Age-1150154.jpg?v=1719987441&amp;width=104"
+                                                    alt="Heart Health Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Heart_Health_Bundle_-_Decode_Age-1150154.jpg?v=1719987441&amp;width=52 52w, //decodeage.com/cdn/shop/files/Heart_Health_Bundle_-_Decode_Age-1150154.jpg?v=1719987441&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Heart Health Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/bone-and-muscle-health-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Bone_and_Muscle_Health_Bundle_-_Decode_Age-1150113.jpg?v=1719987311&amp;width=104"
+                                                    alt="Bone and Muscle Health Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Bone_and_Muscle_Health_Bundle_-_Decode_Age-1150113.jpg?v=1719987311&amp;width=52 52w, //decodeage.com/cdn/shop/files/Bone_and_Muscle_Health_Bundle_-_Decode_Age-1150113.jpg?v=1719987311&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Bone and Muscle Health Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/longevit-resvit-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/LongeVit_ResVit_Bundle_-_Decode_Age-1150162.jpg?v=1719987459&amp;width=104"
+                                                    alt="LongeVit &amp; ResVit Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/LongeVit_ResVit_Bundle_-_Decode_Age-1150162.jpg?v=1719987459&amp;width=52 52w, //decodeage.com/cdn/shop/files/LongeVit_ResVit_Bundle_-_Decode_Age-1150162.jpg?v=1719987459&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">LongeVit &amp; ResVit Combo Slow Down
+                                                    Ageing</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/autophagy-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Autophagy_Bundle_-_Decode_Age-1150109.jpg?v=1719987305&amp;width=104"
+                                                    alt="Autophagy Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Autophagy_Bundle_-_Decode_Age-1150109.jpg?v=1719987305&amp;width=52 52w, //decodeage.com/cdn/shop/files/Autophagy_Bundle_-_Decode_Age-1150109.jpg?v=1719987305&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Autophagy Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/inflammation-management-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Inflammation_Management_Bundle_-_Decode_Age-1150159.jpg?v=1719987450&amp;width=104"
+                                                    alt="Inflammation Management Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Inflammation_Management_Bundle_-_Decode_Age-1150159.jpg?v=1719987450&amp;width=52 52w, //decodeage.com/cdn/shop/files/Inflammation_Management_Bundle_-_Decode_Age-1150159.jpg?v=1719987450&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Inflammation Management Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/weight-management-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Weight_Management_Bundle_2_Months_Dosage_-_Decode_Age-1150310.jpg?v=1719987900&amp;width=104"
+                                                    alt="Weight Management Bundle (2 Months Dosage) - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Weight_Management_Bundle_2_Months_Dosage_-_Decode_Age-1150310.jpg?v=1719987900&amp;width=52 52w, //decodeage.com/cdn/shop/files/Weight_Management_Bundle_2_Months_Dosage_-_Decode_Age-1150310.jpg?v=1719987900&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Weight Management Bundle (2 Month
+                                                    Dosage)</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/sports-performance-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Sports_Performance_Bundle_-_Decode_Age-1150258.jpg?v=1719987738&amp;width=104"
+                                                    alt="Sports Performance Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Sports_Performance_Bundle_-_Decode_Age-1150258.jpg?v=1719987738&amp;width=52 52w, //decodeage.com/cdn/shop/files/Sports_Performance_Bundle_-_Decode_Age-1150258.jpg?v=1719987738&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Sports Performance Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/stamina-booster-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Stamina_Booster_Bundle_-_Decode_Age-1150268.jpg?v=1719987765&amp;width=104"
+                                                    alt="Stamina Booster Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Stamina_Booster_Bundle_-_Decode_Age-1150268.jpg?v=1719987765&amp;width=52 52w, //decodeage.com/cdn/shop/files/Stamina_Booster_Bundle_-_Decode_Age-1150268.jpg?v=1719987765&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Stamina Booster Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/skin-health-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Skin_Health_Bundle_-_Decode_Age-1150245.jpg?v=1719987695&amp;width=104"
+                                                    alt="Skin Health Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Skin_Health_Bundle_-_Decode_Age-1150245.jpg?v=1719987695&amp;width=52 52w, //decodeage.com/cdn/shop/files/Skin_Health_Bundle_-_Decode_Age-1150245.jpg?v=1719987695&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Skin Health Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/senolytic-activator-bundle">
+                                                <img src="//decodeage.com/cdn/shop/files/Senolytic_Activator_Bundle_-_Decode_Age-1150243.jpg?v=1719987690&amp;width=104"
+                                                    alt="Senolytic Activator Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Senolytic_Activator_Bundle_-_Decode_Age-1150243.jpg?v=1719987690&amp;width=52 52w, //decodeage.com/cdn/shop/files/Senolytic_Activator_Bundle_-_Decode_Age-1150243.jpg?v=1719987690&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Senolytic Activator Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/nad-booster-bundle"><img
+                                                    src="//decodeage.com/cdn/shop/files/NAD_Booster_Bundle_-_Decode_Age-1150182.jpg?v=1719987517&amp;width=104"
+                                                    alt="NAD+ Booster Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/NAD_Booster_Bundle_-_Decode_Age-1150182.jpg?v=1719987517&amp;width=52 52w, //decodeage.com/cdn/shop/files/NAD_Booster_Bundle_-_Decode_Age-1150182.jpg?v=1719987517&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">NAD+ Booster Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/menopause-wellness-bundle"><img
+                                                    src="//decodeage.com/cdn/shop/files/Menopause_Wellness_Bundle_-_Decode_Age-1150177.jpg?v=1719987510&amp;width=104"
+                                                    alt="Menopause Wellness Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Menopause_Wellness_Bundle_-_Decode_Age-1150177.jpg?v=1719987510&amp;width=52 52w, //decodeage.com/cdn/shop/files/Menopause_Wellness_Bundle_-_Decode_Age-1150177.jpg?v=1719987510&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Menopause Wellness Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/healthy-ageing-bundle"><img
+                                                    src="//decodeage.com/cdn/shop/files/Healthy_Ageing_Bundle_-_Decode_Age-1150153.jpg?v=1719987437&amp;width=104"
+                                                    alt="Healthy Ageing Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Healthy_Ageing_Bundle_-_Decode_Age-1150153.jpg?v=1719987437&amp;width=52 52w, //decodeage.com/cdn/shop/files/Healthy_Ageing_Bundle_-_Decode_Age-1150153.jpg?v=1719987437&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Healthy Ageing Bundle</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-hover-line">
+                                            <a href="/products/boost-metabolism-bundle"><img
+                                                    src="//decodeage.com/cdn/shop/files/Boost_Metabolism_Bundle_-_Decode_Age-1150114.jpg?v=1719987314&amp;width=104"
+                                                    alt="Boost Metabolism Bundle - Decode Age"
+                                                    srcset="//decodeage.com/cdn/shop/files/Boost_Metabolism_Bundle_-_Decode_Age-1150114.jpg?v=1719987314&amp;width=52 52w, //decodeage.com/cdn/shop/files/Boost_Metabolism_Bundle_-_Decode_Age-1150114.jpg?v=1719987314&amp;width=104 104w"
+                                                    width="104" height="104" loading="lazy" sizes="52px">
+                                                <span class="hover-line">Boost Metabolism Bundle</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#"><span class="hover-line">Decode Biome Test</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-links">
+                    <a href="#" onclick="openSidebar('small-sidebar1','small-cover')">
+                        Category
+                        <button class="btn_1">
+                            <svg role="presentation" focusable="false" width="5" height="8"
+                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <div id="small-sidebar1" class="sidebar">
+                        <button class="closebtn" onclick="closeBothSidebar('sidebar','small-sidebar1')">
+                            <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                class="icon icon-close" viewBox="0 0 24 24">
+                                <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="sidebar-links">
+                            <li>
+                                <button class="text-with-icon h6 text-subdued" data-panel="0"
+                                    onclick="closeSidebar('small-sidebar1','small-cover')">
+                                    <svg role="presentation" focusable="false" width="7" height="10"
+                                        class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                        <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor" stroke-width="2">
+                                        </path>
+                                    </svg>Category
+                                </button>
+                            </li>
+                            <li><a href="#"><span class="hover-line">Sports Performance</span></a></li>
+                            <li><a href="#"><span class="hover-line">NAD+</span></a></li>
+                            <li><a href="#"><span class="hover-line">Senolytic Activator</span></a></li>
+                            <li><a href="#"><span class="hover-line">Healthy Ageing</span></a></li>
+                            <li><a href="#"><span class="hover-line">Autophagy</span></a></li>
+                            <li><a href="#"><span class="hover-line">Sirtuin Activator</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-links">
+                    <a href="#" onclick="openSidebar('small-sidebar2','small-cover')">
+                        Health Concerns
+                        <button class="btn_1">
+                            <svg role="presentation" focusable="false" width="5" height="8"
+                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5">
+                                </path>
+                            </svg>
+                        </button>
+                    </a>
+                    <div id="small-sidebar2" class="sidebar">
+                        <button class="closebtn" onclick="closeBothSidebar('sidebar','small-sidebar2')"><svg
+                                role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                class="icon icon-close" viewBox="0 0 24 24">
+                                <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="sidebar-links">
+                            <li>
+                                <button class="text-with-icon h6 text-subdued" data-panel="0"
+                                    onclick="closeSidebar('small-sidebar2','small-cover')">
+                                    <svg role="presentation" focusable="false" width="7" height="10"
+                                        class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                        <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor" stroke-width="2">
+                                        </path>
+                                    </svg>Health Concerns
+                                </button>
+                            </li>
+                            <li> <a href="#"><span class="hover-line">Menopause</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Boost Metabolism</span> </a> </li>
+                            <li> <a href="#"><span class="hover-line">Skin Health </span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Stamina Booster</span> </a> </li>
+                            <li> <a href="#"><span class="hover-line">NAD+</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Bone and Muscle Health</span> </a> </li>
+                            <li> <a href="/products/cognitive-wellness-bundle"> <span class="hover-line">Cognitive
+                                        Wellness</span> </a> </li>
+                            <li> <a href="#"><span class="hover-line">Weight Management</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Heart Health</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Inflammation</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Immunity</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Mitochondrial</span> </a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-links">
+                    <a href="#" onclick="openSidebar('small-sidebar3','small-cover')">
+                        Articles
+                        <button class="btn_1">
+                            <svg role="presentation" focusable="false" width="5" height="8"
+                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5">
+                                </path>
+                            </svg>
+                        </button>
+                    </a>
+                    <div id="small-sidebar3" class="sidebar">
+                        <button class="closebtn" onclick="closeBothSidebar('sidebar','small-sidebar3')">
+                            <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                class="icon icon-close" viewBox="0 0 24 24">
+                                <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="sidebar-links">
+                            <li>
+                                <button class="text-with-icon h6 text-subdued" data-panel="0"
+                                    onclick="closeSidebar('small-sidebar3','small-cover')">
+                                    <svg role="presentation" focusable="false" width="7" height="10"
+                                        class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                        <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor" stroke-width="2">
+                                        </path>
+                                    </svg>
+                                    Articles
+                                </button>
+                            </li>
+                            <li> <a href="#"><span class="hover-line">Gut Microbiome</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Health and Disease</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Biohacking</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Clinical Trials</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Ageing</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Supplements</span> </a> </li>
+                            <li> <a href="#"><span class="hover-line">News</span></a> </li>
+                            <li> <a href="/blogs/pr"> <span class="hover-line">PR</span> </a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-links">
+                    <a href="#" onclick="openSidebar('small-sidebar4','small-cover')">
+                        About Us
+                        <button class="btn_1">
+                            <svg role="presentation" focusable="false" width="5" height="8"
+                                class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
+                                <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5">
+                                </path>
+                            </svg>
+                        </button>
+                    </a>
+                    <div id="small-sidebar4" class="sidebar">
+                        <button class="closebtn" onclick="closeBothSidebar('sidebar','small-sidebar4')">
+                            <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19"
+                                class="icon icon-close" viewBox="0 0 24 24">
+                                <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="sidebar-links">
+                            <li>
+                                <button class="text-with-icon h6 text-subdued" data-panel="0"
+                                    onclick="closeSidebar('small-sidebar4','small-cover')">
+                                    <svg role="presentation" focusable="false" width="7" height="10"
+                                        class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
+                                        <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor" stroke-width="2">
+                                        </path>
+                                    </svg>
+                                    About Us
+                                </button>
+                            </li>
+                            <li> <a href="#"><span class="hover-line">Who We Are</span></a> </li>
+                            <li> <a href="/pages/careers"><span class="hover-line">Work With Us</span></a> </li>
+                            <li> <a href="#"><span class="hover-line">Science</span></a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://help.decodeage.com/" class="group block w-full">
+                        <span><span class="hover-line">Help</span></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- social media -->
+            <div class="footer-socail-media">
+                <ul class="social-media ">
+                    <!-- facebook -->
+                    <li>
+                        <a href="https://www.facebook.com/decodeage/" target="_blank" rel="noopener"
+                            aria-label="Follow on Facebook">
+                            <svg role="presentation" focusable="false" width="27" height="27" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.183 21.85v-8.868H7.2V9.526h2.983V6.982a4.17 4.17 0 0 1 4.44-4.572 22.33 22.33 0 0 1 2.667.144v3.084h-1.83a1.44 1.44 0 0 0-1.713 1.68v2.208h3.423l-.447 3.456h-2.97v8.868h-3.57Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- twitter -->
+                    <li>
+                        <a href="https://twitter.com/decodeage" class="tap-area" target="_blank" rel="noopener"
+                            aria-label="Follow on Twitter">
+                            <svg role="presentation" focusable="false" width="27" height="27" class="icon icon-twitter"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M16.94 4h2.715l-5.93 6.777L20.7 20h-5.462l-4.278-5.593L6.065 20H3.35l6.342-7.25L3 4h5.6l3.868 5.113L16.94 4Zm-.952 14.375h1.504L7.784 5.54H6.17l9.818 12.836Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Instagram -->
+                    <li>
+                        <a href="https://www.instagram.com/decodeage/" class="tap-area" target="_blank" rel="noopener"
+                            aria-label="Follow on Instagram"><svg role="presentation" focusable="false" width="27"
+                                height="27" class="icon icon-instagram" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Pinterest -->
+                    <li>
+                        <a href="https://pinterest.com/decodeage/" class="tap-area" target="_blank" rel="noopener"
+                            aria-label="Follow on Pinterest"><svg role="presentation" focusable="false" width="27"
+                                height="27" class="icon icon-pinterest" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.765 2.401c3.59-.054 5.837 1.4 6.895 3.95.349.842.722 2.39.442 3.675-.112.512-.144 1.048-.295 1.53-.308.983-.708 1.853-1.238 2.603-.72 1.02-1.81 1.706-3.182 2.052-1.212.305-2.328-.152-2.976-.643-.206-.156-.483-.36-.56-.643h-.029c-.046.515-.244 1.062-.383 1.531-.193.65-.23 1.321-.472 1.929a12.345 12.345 0 0 1-.942 1.868c-.184.302-.692 1.335-1.061 1.347-.04-.078-.057-.108-.06-.245-.118-.19-.035-.508-.087-.766-.082-.4-.145-1.123-.06-1.53v-.643c.096-.442.092-.894.207-1.317.25-.92.39-1.895.648-2.848.249-.915.477-1.916.678-2.847.045-.21-.21-.815-.265-1.041-.174-.713-.042-1.7.176-2.236.275-.674 1.08-1.703 2.122-1.439.838.212 1.371 1.118 1.09 2.266-.295 1.205-.677 2.284-.943 3.49-.068.311.05.641.118.827.248.672 1 1.324 2.004 1.072 1.52-.383 2.193-1.76 2.652-3.246.124-.402.109-.781.206-1.225.204-.935.118-2.331-.177-3.061-.472-1.17-1.353-1.92-2.563-2.328L12.707 4.3c-.56-.128-1.626.064-2.004.183-1.69.535-2.737 1.427-3.388 3.032-.222.546-.344 1.1-.383 1.868l-.03.276c.13.686.144 1.14.413 1.653.132.252.447.451.5.765.032.185-.104.464-.147.613-.065.224-.041.48-.147.673-.192.349-.714.087-.943-.061-1.192-.77-2.175-2.995-1.62-5.144.085-.332.09-.62.206-.919.723-1.844 1.802-2.978 3.359-3.95.583-.364 1.37-.544 2.092-.734l1.149-.154Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Youtube -->
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCuqWkNUAkHyrLFXtRKEzavQ" class="tap-area"
+                            target="_blank" rel="noopener" aria-label="Follow on YouTube"><svg role="presentation"
+                                focusable="false" width="27" height="27" class="icon icon-youtube" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.44 5.243c.929.244 1.66.963 1.909 1.876.451 1.654.451 5.106.451 5.106s0 3.452-.451 5.106a2.681 2.681 0 0 1-1.91 1.876c-1.684.443-8.439.443-8.439.443s-6.754 0-8.439-.443a2.682 2.682 0 0 1-1.91-1.876c-.45-1.654-.45-5.106-.45-5.106s0-3.452.45-5.106a2.681 2.681 0 0 1 1.91-1.876c1.685-.443 8.44-.443 8.44-.443s6.754 0 8.438.443Zm-5.004 6.982L9.792 15.36V9.091l5.646 3.134Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Linkedin -->
+                    <li>
+                        <a href="https://www.linkedin.com/company/decogeage/" class="tap-area" target="_blank"
+                            rel="noopener" aria-label="Follow on LinkedIn"><svg role="presentation" focusable="false"
+                                width="27" height="27" class="icon icon-linkedin" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.349 5.478a1.875 1.875 0 1 0-3.749 0 1.875 1.875 0 1 0 3.749 0ZM7.092 19.2H3.857V8.78h3.235V19.2ZM12.22 8.78H9.121V19.2h3.228v-5.154c0-1.36.257-2.676 1.94-2.676 1.658 0 1.68 1.554 1.68 2.763V19.2H19.2v-5.715c0-2.806-.605-4.963-3.877-4.963-1.573 0-2.629.863-3.06 1.683h-.044V8.78Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="account">
+                    <a href="/account" class="">Account</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dropdown -->
+    <div class="flag-content">
+        <h3>Select Your Country:</h3>
+        <!-- Dtopdown All countries list -->
+        <div id="dropDown" class="optionGroup"></div>
+        <!-- Dropdown to open and close -->
+        <div id="select-list-data">
+            <div class="listOption">
+                <img src="https://cdn-icons-png.flaticon.com/512/206/206606.png" id="dropDown-image" />
+                <span id="dropDown-country-name">India(INR ₹)</span>
+            </div>
+            <svg role="presentation" focusable="false" width="10" height="7" id="dropDown-arrow" viewBox="0 0 10 7">
+                <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Write ur code in this or start from here-->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
